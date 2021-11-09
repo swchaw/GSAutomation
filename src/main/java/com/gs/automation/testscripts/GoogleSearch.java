@@ -8,18 +8,19 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+
 import java.io.FileReader;
 import java.io.IOException;
 
-public class GS {
+public class GoogleSearch {
     /**
      * This method calls google dashboard
      */
     @Test
     public void verifyGS() throws IOException, ParseException {
-// Testing Commits and merging
+        // Testing Commits and merging
         //Setting webdriver.gecko.driver property
-        System.setProperty("webdriver.chrome.driver","C:\\Users\\swati.chawla\\DriverCrom\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "C:\\Users\\swati.chawla\\DriverCrom\\chromedriver.exe");
         //Instantiating driver object and launching browser
         WebDriver driver1 = new ChromeDriver();
         String url = " https://www.google.com";
@@ -32,10 +33,10 @@ public class GS {
         jsonObject.get("search-text2");
         System.out.println(jsonObject.get("search-text2"));
 
-        WebElement searchbox= driver1.findElement(By.xpath("/html/body/div[1]/div[3]/form/div[1]/div[1]/div[1]/div/div[2]/input"));
+        WebElement searchbox = driver1.findElement(By.xpath("/html/body/div[1]/div[3]/form/div[1]/div[1]/div[1]/div/div[2]/input"));
         searchbox.sendKeys("selenium java search ");
         //Closing the browser
-        WebElement googleSearchbutton= driver1.findElement(By.xpath("(//*[@class='gNO89b'])[2]"));
+        WebElement googleSearchbutton = driver1.findElement(By.xpath("(//*[@class='gNO89b'])[2]"));
         googleSearchbutton.click();
         //driver.quit();
     }
