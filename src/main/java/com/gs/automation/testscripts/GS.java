@@ -29,8 +29,8 @@ public class GS {
         Object obj = parser.parse(new FileReader("C:\\Users\\swati.chawla\\sample\\src\\main\\java\\com\\gs\\automation\\testdata.json"));
         JSONObject jsonObject = (JSONObject) obj;
 
-        jsonObject.get("search-text");
-        System.out.println(jsonObject.get("search-text"));
+        jsonObject.get("search-text1");
+        System.out.println(jsonObject.get("search-text1"));
 
         WebElement searchbox= driver.findElement(By.xpath("/html/body/div[1]/div[3]/form/div[1]/div[1]/div[1]/div/div[2]/input"));
 
