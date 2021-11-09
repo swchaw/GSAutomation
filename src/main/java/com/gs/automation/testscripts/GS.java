@@ -38,7 +38,7 @@ public class GS {
 
         WebElement searchbox= driver.findElement(By.xpath("/html/body/div[1]/div[3]/form/div[1]/div[1]/div[1]/div/div[2]/input"));
         searchbox.sendKeys("selenium");
-        //Closing the browser
+        //Closing the browserADADadads
         WebElement googleSearchbutton= driver.findElement(By.xpath("(//*[@class='gNO89b'])[2]"));
         googleSearchbutton.click();
         //driver.quit();
