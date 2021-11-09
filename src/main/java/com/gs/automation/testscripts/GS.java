@@ -30,7 +30,7 @@ public class GS {
         driver.get(url);
         JSONParser parser = new JSONParser();
 
-        Object obj = parser.parse(new FileReader("C:\\Users\\swati.chawla\\sample\\src\\main\\java\\com\\gs\\automation\\temp.json"));
+        Object obj = parser.parse(new FileReader("C:\\Users\\swati.chawla\\sample\\src\\main\\java\\com\\gs\\automation\\testdata.json"));
         JSONObject jsonObject = (JSONObject) obj;
 
         jsonObject.get("search-text");
