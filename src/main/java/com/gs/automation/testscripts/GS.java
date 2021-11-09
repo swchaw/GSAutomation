@@ -33,7 +33,7 @@ public class GS {
         System.out.println(jsonObject.get("search-text"));
 
         WebElement searchbox= driver.findElement(By.xpath("/html/body/div[1]/div[3]/form/div[1]/div[1]/div[1]/div/div[2]/input"));
-        searchbox.sendKeys("selenium java");
+        searchbox.sendKeys("selenium java search ");
         //Closing the browser
         WebElement googleSearchbutton= driver.findElement(By.xpath("(//*[@class='gNO89b'])[2]"));
         googleSearchbutton.click();
