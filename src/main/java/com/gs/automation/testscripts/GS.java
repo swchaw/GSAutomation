@@ -17,7 +17,7 @@ public class GS {
      */
     @Test
     public void verifyGS() throws IOException, ParseException {
-
+// Testing Commits and merging
         //Setting webdriver.gecko.driver property
         System.setProperty("webdriver.chrome.driver","C:\\Users\\swati.chawla\\DriverCrom\\chromedriver.exe");
         //Instantiating driver object and launching browser
