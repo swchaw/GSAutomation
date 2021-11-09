@@ -1,6 +1,5 @@
 package com.gs.automation.testscripts;
 
-import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
@@ -9,15 +8,12 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.Iterator;
 
 public class GS {
     /**
-     * This method calls Falcon Demo Test Report Test to read excel values and verify the dashboard
+     * This method calls google dashboard
      */
     @Test
     public void verifyGS() throws IOException, ParseException {
@@ -37,7 +33,7 @@ public class GS {
         System.out.println(jsonObject.get("search-text"));
 
         WebElement searchbox= driver.findElement(By.xpath("/html/body/div[1]/div[3]/form/div[1]/div[1]/div[1]/div/div[2]/input"));
-        searchbox.sendKeys("selenium");
+        searchbox.sendKeys("selenium java");
         //Closing the browser
         WebElement googleSearchbutton= driver.findElement(By.xpath("(//*[@class='gNO89b'])[2]"));
         googleSearchbutton.click();
