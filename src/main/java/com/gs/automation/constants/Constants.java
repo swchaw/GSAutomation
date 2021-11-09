@@ -5,7 +5,7 @@ import java.io.File;
 /**
  * This class contains the constants for the project
  *
- * @author Mohit.Jaiswal
+ * @author Swati.Chawala
  */
 public class j {
 
